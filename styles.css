@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Space Mono", serif;
 }
 
 :root {
@@ -17,34 +18,34 @@ body {
   background-color: var(--cyan-200);
 }
 
-#heading-wrapper {
-  height: 144px;
+#logo-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 144px;
 }
 
 h1 {
-  text-transform: uppercase;
   color: var(--cyan-500);
+  text-transform: uppercase;
 }
 
 #content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
   height: 100vh;
-  border-radius: 25px 25px 0 0;
   padding: 32px;
+  background-color: white;
+  border-radius: 25px 25px 0 0;
 }
 
 #content-inner-wrapper {
-  width: 100%;
   display: grid;
   gap: 32px;
+  width: 100%;
 }
 
 .field-wrapper {
@@ -54,23 +55,41 @@ h1 {
 
 label,
 legend {
-  margin-bottom: 6px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--cyan-400);
+}
+
+.text-input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 input[type="text"] {
+  width: 100%;
+  padding-right: 16px;
   background-color: var(--cyan-100);
   border: none;
   border-radius: 5px;
   font-size: 24px;
+  font-weight: bold;
   text-align: right;
+}
+
+.icon {
+  position: absolute;
+  height: 15.46px;
+  margin-left: 16px;
 }
 
 #tip-selection {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 16px;
-  border: none;
+  grid-template-columns: 1fr 1fr;
   padding: 0;
+  border: none;
 }
 
 .button,
@@ -79,17 +98,19 @@ input[type="text"] {
 }
 
 .button {
-  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  position: relative;
   background-color: var(--cyan-600);
-  color: white;
   border-radius: 5px;
+  color: white;
 }
 
 .button label {
+  margin: 0;
   font-size: 24px;
+  color: white;
 }
 
 .button:has(input[type="text"]) {
@@ -97,51 +118,60 @@ input[type="text"] {
 }
 
 .button input[type="text"] {
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 
 input[type="radio"] {
-  opacity: 0;
-  height: 100%;
-  width: 100%;
   position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .button:has([type="radio"]:checked) {
-  color: var(--cyan-600);
   background-color: var(--cyan-700);
+}
+.button:has([type="radio"]:checked) label {
+  color: var(--cyan-600);
 }
 
 #output-wrapper {
   display: grid;
   flex-direction: column;
   gap: 32px;
+  padding: 24px;
+  padding-top: 40px;
   background-color: var(--cyan-600);
   border-radius: 15px;
-  padding: 40px;
 }
 
 .output-inner-wrapper {
   display: flex;
-  width: 100%;
   justify-content: space-between;
+  width: 100%;
 }
 
 .output-label {
   color: white;
 }
 
+.per-person {
+  color: var(--cyan-300);
+}
+
 .output {
-  color: var(--cyan-700);
   font-size: 32px;
+  font-weight: bold;
+  color: var(--cyan-700);
 }
 
 #reset-btn {
+  width: 100%;
   background-color: var(--cyan-700);
   border: none;
-  color: var(--cyan-600);
-  width: 100%;
-  text-transform: uppercase;
   font-size: 20px;
+  font-weight: bold;
+  color: var(--cyan-600);
+  text-transform: uppercase;
 }
