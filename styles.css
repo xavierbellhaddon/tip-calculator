@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --cyan-100: #f4fafa;
+  --cyan-200: #c5e4e7;
+  --cyan-300: #7f9c9f;
+  --cyan-400: #5e7a7d;
+  --cyan-500: #3d6666;
+  --cyan-600: #00494d;
+  --cyan-700: #26c0ab;
+}
+
+body {
+  background-color: var(--cyan-200);
+}
+
+#heading-wrapper {
+  height: 144px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: var(--cyan-500);
+}
+
+#content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  height: 100vh;
+  border-radius: 25px 25px 0 0;
+  padding: 32px;
+}
+
+#content-inner-wrapper {
+  width: 100%;
+  display: grid;
+  gap: 32px;
+}
+
+.field-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+label,
+legend {
+  margin-bottom: 6px;
+}
+
+input[type="text"] {
+  background-color: var(--cyan-100);
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  text-align: right;
+}
+
+#tip-selection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  border: none;
+  padding: 0;
+}
+
+.button,
+input[type="text"] {
+  height: 48px;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cyan-600);
+  color: white;
+  border-radius: 5px;
+}
+
+.button label {
+  font-size: 24px;
+}
+
+.button:has(input[type="text"]) {
+  background-color: transparent;
+}
+
+.button input[type="text"] {
+  height: 100%;
+  width: 100%;
+}
+
+input[type="radio"] {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.button:has([type="radio"]:checked) {
+  color: var(--cyan-600);
+  background-color: var(--cyan-700);
+}
+
+#output-wrapper {
+  display: grid;
+  flex-direction: column;
+  gap: 32px;
+  background-color: var(--cyan-600);
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.output-inner-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.output-label {
+  color: white;
+}
+
+.output {
+  color: var(--cyan-700);
+  font-size: 32px;
+}
+
+#reset-btn {
+  background-color: var(--cyan-700);
+  border: none;
+  color: var(--cyan-600);
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 20px;
+}
