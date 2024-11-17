@@ -8,12 +8,12 @@
     <title>Tip Calculator</title>
   </head>
   <body>
-    <div>
+    <div id="outer-wrapper">
       <div id="logo-wrapper">
         <img src="images/logo.svg" alt="logo" />
       </div>
-      <div id="content-wrapper">
-        <div id="content-inner-wrapper">
+      <div id="ui-wrapper">
+        <div id="input-wrapper">
           <div class="field-wrapper">
             <label for="bill">Bill</label>
             <div class="text-input-wrapper">
@@ -69,23 +69,23 @@
               <img src="images/icon-person.svg" alt="person" class="icon" />
             </div>
           </div>
-          <div id="output-wrapper">
-            <div class="output-inner-wrapper">
-              <div>
-                <p class="output-label">Tip Amount</p>
-                <p class="per-person">/ person</p>
-              </div>
-              <span class="output">$4.27</span>
+        </div>
+        <div id="output-wrapper">
+          <div class="output-inner-wrapper">
+            <div>
+              <p class="output-label">Tip Amount</p>
+              <p class="per-person">/ person</p>
             </div>
-            <div class="output-inner-wrapper">
-              <div>
-                <p class="output-label">Total</p>
-                <p class="per-person">/ person</p>
-              </div>
-              <span class="output">$32.79</span>
-            </div>
-            <button id="reset-btn" class="button">Reset</button>
+            <span class="output">$4.27</span>
           </div>
+          <div class="output-inner-wrapper">
+            <div>
+              <p class="output-label">Total</p>
+              <p class="per-person">/ person</p>
+            </div>
+            <span class="output">$32.79</span>
+          </div>
+          <button id="reset-btn" class="button">Reset</button>
         </div>
       </div>
     </div>
