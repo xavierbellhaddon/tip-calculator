@@ -8,16 +8,16 @@
     <title>Tip Calculator</title>
   </head>
   <body>
-    <div id="outer-wrapper">
-      <div id="logo-wrapper">
+    <div class="outer-wrapper">
+      <div class="logo-wrapper">
         <img src="images/logo.svg" alt="logo" />
       </div>
-      <div id="ui-wrapper">
-        <div id="input-wrapper">
+      <div class="ui-wrapper">
+        <div class="input-wrapper">
           <div class="field-wrapper">
             <label for="bill">Bill</label>
             <div class="text-input-wrapper">
-              <input type="text" name="bill" id="bill" placeholder="0" />
+              <input type="text" name="bill" class="bill" placeholder="0" />
               <img
                 src="images/icon-dollar.svg"
                 alt="dollar sign"
@@ -26,37 +26,37 @@
             </div>
           </div>
           <div class="field-wrapper">
-            <fieldset id="tip-selection">
+            <fieldset class="tip-selection">
               <legend>Select Tip %</legend>
               <div class="button">
-                <input type="radio" name="tip-amount" id="five-percent" />
+                <input type="radio" name="tip-amount" class="five-percent" />
                 <label for="five-percent" class="btn">5%</label>
               </div>
               <div class="button">
-                <input type="radio" name="tip-amount" id="ten-percent" />
+                <input type="radio" name="tip-amount" class="ten-percent" />
                 <label for="ten-percent" class="btn">10%</label>
               </div>
               <div class="button">
-                <input type="radio" name="tip-amount" id="fifteen-percent" />
+                <input type="radio" name="tip-amount" class="fifteen-percent" />
                 <label for="fifteen-percent" class="btn">15%</label>
               </div>
               <div class="button">
                 <input
                   type="radio"
                   name="tip-amount"
-                  id="twenty-five-percent"
+                  class="twenty-five-percent"
                 />
                 <label for="twenty-five-percent" class="btn">25%</label>
               </div>
               <div class="button">
-                <input type="radio" name="tip-amount" id="fifty-percent" />
+                <input type="radio" name="tip-amount" class="fifty-percent" />
                 <label for="fifty-percent" class="btn">50%</label>
               </div>
               <div class="button">
                 <input
                   type="text"
                   name="tip-amount"
-                  id="custom-amount"
+                  class="custom-amount"
                   placeholder="Custom"
                 />
               </div>
@@ -65,12 +65,12 @@
           <div class="field-wrapper">
             <label for="">Number of People</label>
             <div class="text-input-wrapper">
-              <input type="text" name="" id="" placeholder="0" />
+              <input type="text" name="" class="" placeholder="0" />
               <img src="images/icon-person.svg" alt="person" class="icon" />
             </div>
           </div>
         </div>
-        <div id="output-wrapper">
+        <div class="output-wrapper">
           <div class="output-inner-wrapper">
             <div>
               <p class="output-label">Tip Amount</p>
@@ -85,7 +85,7 @@
             </div>
             <span class="output">$32.79</span>
           </div>
-          <button id="reset-btn" class="button">Reset</button>
+          <button class="reset-btn" class="button">Reset</button>
         </div>
       </div>
     </div>
